@@ -1,0 +1,144 @@
+html, body {
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    height: 100%;
+    background-color: #e4edff;
+}
+
+
+/*Styles for the Search Card*/
+.search_card {
+    background-color: #D9FAFF;
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-top: 5%;
+    height: 100%;
+    border-top-right-radius: 5%;
+    border-bottom-right-radius: 5%;
+    border-right-style: solid;
+    border-width: 2px;
+    border-color: gray;
+}
+
+#globe_pic {
+    display: block;
+    margin-left: 11%;
+    width: 120px;
+    height: 120px;
+}
+
+.mb-3 {
+    width: 70%;
+}
+
+#radio_buttons {
+    margin-top: 20%;
+    background-color: white;
+    border-radius: 4%;
+    padding: 4%;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.field {
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border-radius:14%;
+}
+.lat_long{
+    margin-top:5%;
+}
+
+.getbutton {
+    margin-top: 5%;
+}
+
+
+.getbutton1 {
+    background-color: #007588 !important; 
+    color: white !important; 
+    border-color: #007588 !important;
+    
+}
+
+.getbutton1:hover {
+    background-color: #00CEED !important; 
+    border-color: #00CEED !important;
+        
+    }
+
+
+
+
+/*Styles for the Results Card*/
+.results_card {
+    background: rgb(238,253,255);
+    background: linear-gradient(90deg, rgba(238,253,255,1) 0%, rgba(183,255,215,1) 48%, rgba(228,237,255,1) 100%);
+    text-align: center;
+    padding: 1%;
+    height: 100%;
+    width: 100%;
+}
+
+/*Styles for the Thess Card*/
+.thess_card {
+    background: rgb(228,237,255);
+    background: linear-gradient(90deg, rgba(228,237,255,1) 0%, rgba(195,215,255,1) 46%, rgba(255,255,255,1) 100%);
+    text-align: center;
+    padding: 1%;
+    height: 100%;
+    width: 100%;
+}
+
+.imgthess {
+    height: 48px;
+    width: 48px
+}
+
+/*Flex container for thesscard and results card*/
+.content {
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+    width: 100%;
+}
+
+
+/* Styles for the Bootstrap Cards  */
+.card {
+    border-radius: 4px;
+    background: #fff;
+    box-shadow: 0 6px 10px rgba(0,0,0,.08), 0 0 6px rgba(0,0,0,.05);
+    transition: .3s transform cubic-bezier(.155,1.105,.295,1.12),.3s box-shadow,.3s -webkit-transform cubic-bezier(.155,1.105,.295,1.12);
+    padding: 14px 14px 14px 14px;
+    cursor: pointer;
+    margin-bottom: 4%;
+   
+    background: radial-gradient(circle, rgba(255,255,255,1) 0%, rgba(217,250,255,1) 100%);
+}
+.card:hover {
+        transform: scale(1.05);
+        box-shadow: 0 10px 20px rgba(0,0,0,.12), 0 4px 8px rgba(0,0,0,.06);
+    }
+
+
+.row{
+    margin-top:4%;
+}
+
+
+#conditionscard {
+    padding-top: 0px;
+    padding-right: 0px;
+    padding-bottom: 0px;
+    padding-left: 0px;
+}
+
+#conditionscardbody {
+    padding-top: 10px;
+    padding-bottom: 0px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+#cardtitleconditions {
+    margin-bottom: 0px;
+}
+

@@ -1,0 +1,96 @@
+﻿@using System.Net.Http;
+@using System.Net.Http.Json;
+@using System.Threading.Tasks;
+@using System.Text.Json
+@using BlazorApp2.Data
+@inject StateContainer StateContainer
+@layout MainLayout
+@inject IJSRuntime JSRuntime
+
+
+
+
+<div class="search_card">
+    <h4>Enter Geographical Coordinates</h4>
+    <img src="globecloudy.png.png" id="globe_pic">
+
+    <div class="lat_long">
+       
+            <div class="mb-3">
+            <label class="form-label"><img src="pin.png" alt="Italian Trulli">Latitude:</label>
+            <div class="field">
+                <NumberInput TValue="decimal" @bind-Value="@latitude"  EnableMinMax="true" Min="-90" Max="90" AllowNegativeNumbers="true" />
+                
+                </div>
+            <span class="form-text">Latitude must be between -90 and 90.</span>
+            </div>
+
+            <div class="mb-3">
+            <label class="form-label"><img src="pin.png" alt="Italian Trulli">Longtitude:</label>
+            <div class="field"><NumberInput TValue="decimal" @bind-Value="@longitude" EnableMinMax="true" Min="-180" Max="180" AllowNegativeNumbers="true" /></div>
+            <span class="form-text">Longtitude must be between -180 and 180.</span>
+            </div>
+    </div>
+
+    <div class="getbutton"><Button class ="getbutton1"Color="ButtonColor.Primary" Size="Size.Large" @onclick="GetWeather">Get Weather </Button></div>
+    
+
+    
+   
+    <div id="radio_buttons">
+        <p><img src="units.png" alt="Italian Trulli" /> Change temperature measurement unit:</p>
+        <input type="radio" id="tempUnitC" name="tempUnit" value="C" @onclick="() => StateContainer.ChangeTempUnit('C')">
+        <label for="tempUnitC">Celsius</label><br>
+        <input type="radio" id="tempUnitF" name="tempUnit" value="F" @onclick="() => StateContainer.ChangeTempUnit('F')">
+        <label for="tempUnitF">Fahrenheit</label><br>
+        <input type="radio" id="tempUnitK" name="tempUnit" value="K" @onclick="() => StateContainer.ChangeTempUnit('K')">
+        <label for="tempUnitK">Kelvin</label><br>
+    </div>
+
+</div>
+
+@* In Blazor, the correct syntax to bind a method to an event like onclick is @onclick="() => Method()" *@
+
+
+
+@code {
+    private CurrWeather currWeather;
+    private decimal latitude=39 ;
+    private decimal longitude=21 ;
+    private char tempUnit = 'C'; 
+
+    private async Task GetWeather()
+    {
+        HttpClient httpClient = new HttpClient();
+        var response = await httpClient.GetAsync($"https://api.openweathermap.org/data/2.5/weather?lat={latitude}&lon={longitude}&appid=45aa6a6193d66bea741d8403e2f687d4");
+        var jsonResult = await response.Content.ReadAsStringAsync();
+
+        currWeather = JsonSerializer.Deserialize<CurrWeather>(jsonResult);
+        StateContainer.SetWeather(currWeather);
+        await JSRuntime.InvokeVoidAsync("changeBodyBgColor", "#eefdff");
+    }
+
+    
+}
+
+
+
+  @*   HttpClient httpClient = new HttpClient(); - This line creates a new instance of the HttpClient class, which is used to send HTTP requests and receive HTTP responses from a resource identified by a URI.
+
+    var response = await httpClient.GetAsync($"https://api.openweathermap.org/data/2.5/weather?lat={latitude}&lon={longitude}&appid=45aa6a6193d66bea741d8403e2f687d4"); - This line sends an asynchronous GET request to the OpenWeatherMap API. The URL includes query parameters for latitude, longitude, and the API key.
+
+    var jsonResult = await response.Content.ReadAsStringAsync(); - This line reads the HTTP response content as a string asynchronously.
+
+    currWeather = JsonSerializer.Deserialize<CurrWeather>(jsonResult); - This line deserializes the JSON response string into an instance of the CurrWeather class.
+
+    StateContainer.SetWeather(currWeather); - This line sets the current weather in the StateContainer, which is likely a shared state container in the Blazor application.
+
+The async and await keywords are used to perform the HTTP request and response reading asynchronously, which means it doesn’t block the execution of the rest of the program while waiting for these operations to complete. This is particularly useful in a web application where you don’t want to freeze the UI while waiting for a response from a web service.
+
+This method is marked as private, meaning it can only be called from within the same class where it is defined. The Task return type indicates that the method runs asynchronously and does not return a value. The GetWeather method name suggests that it retrieves weather data.
+
+Please note that you should replace {latitude}, {longitude}, and {appid} with actual values before making the request. The {appid} is your OpenWeatherMap API key, which you can get by signing up on their website. The {latitude} and {longitude} are the coordinates for which you want to get the weather data.
+
+Remember to handle potential exceptions that might occur during the execution of this method, such as network issues or issues with the OpenWeatherMap service. You might also want to handle the case where the returned weather data is not in the expected format.
+ *@
+
