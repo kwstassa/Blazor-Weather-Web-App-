@@ -1,0 +1,21 @@
+@import '_content/Blazor.Bootstrap/Blazor.Bootstrap.bundle.scp.css';
+
+/* _content/BlazorApp2/Components/Layout/MainLayout.razor.rz.scp.css */
+.wholepagew[b-2vf97p5uii] {
+    display: flex;
+}
+
+.search_barw[b-2vf97p5uii] {
+    flex:2;
+
+   
+    
+}
+
+
+.content[b-2vf97p5uii] {
+    flex: 7;
+    display:flex;
+    flex-direction:row;
+    
+}

@@ -1,1 +1,0 @@
-echo '[[redirects]]\nfrom = "/*"\nto = "/index.html"\nstatus = 200' > netlify.toml

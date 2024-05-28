@@ -1,0 +1,101 @@
+{
+  "Files": [
+    {
+      "Id": "C:\\Users\\Kwsths\\Desktop\\BlazorApp2\\BlazorApp2\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\BlazorApp2.bundle.scp.css",
+      "PackagePath": "staticwebassets\\BlazorApp2.bundle.scp.css"
+    },
+    {
+      "Id": "C:\\Users\\Kwsths\\Desktop\\BlazorApp2\\BlazorApp2\\wwwroot\\app.css",
+      "PackagePath": "staticwebassets\\app.css"
+    },
+    {
+      "Id": "C:\\Users\\Kwsths\\Desktop\\BlazorApp2\\BlazorApp2\\wwwroot\\cloudy.png",
+      "PackagePath": "staticwebassets\\cloudy.png"
+    },
+    {
+      "Id": "C:\\Users\\Kwsths\\Desktop\\BlazorApp2\\BlazorApp2\\wwwroot\\exclamation.png",
+      "PackagePath": "staticwebassets\\exclamation.png"
+    },
+    {
+      "Id": "C:\\Users\\Kwsths\\Desktop\\BlazorApp2\\BlazorApp2\\wwwroot\\favicon.png",
+      "PackagePath": "staticwebassets\\favicon.png"
+    },
+    {
+      "Id": "C:\\Users\\Kwsths\\Desktop\\BlazorApp2\\BlazorApp2\\wwwroot\\globe.png.png",
+      "PackagePath": "staticwebassets\\globe.png.png"
+    },
+    {
+      "Id": "C:\\Users\\Kwsths\\Desktop\\BlazorApp2\\BlazorApp2\\wwwroot\\globecloudy.png.png",
+      "PackagePath": "staticwebassets\\globecloudy.png.png"
+    },
+    {
+      "Id": "C:\\Users\\Kwsths\\Desktop\\BlazorApp2\\BlazorApp2\\wwwroot\\humidity.png",
+      "PackagePath": "staticwebassets\\humidity.png"
+    },
+    {
+      "Id": "C:\\Users\\Kwsths\\Desktop\\BlazorApp2\\BlazorApp2\\wwwroot\\man.png",
+      "PackagePath": "staticwebassets\\man.png"
+    },
+    {
+      "Id": "C:\\Users\\Kwsths\\Desktop\\BlazorApp2\\BlazorApp2\\wwwroot\\netflify.toml",
+      "PackagePath": "staticwebassets\\netflify.toml"
+    },
+    {
+      "Id": "C:\\Users\\Kwsths\\Desktop\\BlazorApp2\\BlazorApp2\\wwwroot\\pin.png",
+      "PackagePath": "staticwebassets\\pin.png"
+    },
+    {
+      "Id": "C:\\Users\\Kwsths\\Desktop\\BlazorApp2\\BlazorApp2\\wwwroot\\sky.png",
+      "PackagePath": "staticwebassets\\sky.png"
+    },
+    {
+      "Id": "C:\\Users\\Kwsths\\Desktop\\BlazorApp2\\BlazorApp2\\wwwroot\\telescope.png",
+      "PackagePath": "staticwebassets\\telescope.png"
+    },
+    {
+      "Id": "C:\\Users\\Kwsths\\Desktop\\BlazorApp2\\BlazorApp2\\wwwroot\\temperature.png",
+      "PackagePath": "staticwebassets\\temperature.png"
+    },
+    {
+      "Id": "C:\\Users\\Kwsths\\Desktop\\BlazorApp2\\BlazorApp2\\wwwroot\\thess.png",
+      "PackagePath": "staticwebassets\\thess.png"
+    },
+    {
+      "Id": "C:\\Users\\Kwsths\\Desktop\\BlazorApp2\\BlazorApp2\\wwwroot\\thess2.png",
+      "PackagePath": "staticwebassets\\thess2.png"
+    },
+    {
+      "Id": "C:\\Users\\Kwsths\\Desktop\\BlazorApp2\\BlazorApp2\\wwwroot\\time.png",
+      "PackagePath": "staticwebassets\\time.png"
+    },
+    {
+      "Id": "C:\\Users\\Kwsths\\Desktop\\BlazorApp2\\BlazorApp2\\wwwroot\\units.png",
+      "PackagePath": "staticwebassets\\units.png"
+    },
+    {
+      "Id": "C:\\Users\\Kwsths\\Desktop\\BlazorApp2\\BlazorApp2\\wwwroot\\unknownflag.png",
+      "PackagePath": "staticwebassets\\unknownflag.png"
+    },
+    {
+      "Id": "C:\\Users\\Kwsths\\Desktop\\BlazorApp2\\BlazorApp2\\wwwroot\\wind.png",
+      "PackagePath": "staticwebassets\\wind.png"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.BlazorApp2.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.build.BlazorApp2.props",
+      "PackagePath": "build\\BlazorApp2.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildMultiTargeting.BlazorApp2.props",
+      "PackagePath": "buildMultiTargeting\\BlazorApp2.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildTransitive.BlazorApp2.props",
+      "PackagePath": "buildTransitive\\BlazorApp2.props"
+    }
+  ],
+  "ElementsToRemove": []
+}
